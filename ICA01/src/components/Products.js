@@ -14,7 +14,7 @@ export default function Products(){
         if (result){
             setCart(cart.map(item=>
                 item.id === flower.id
-            ?{...item, qty: item.qty+qty, totalPrice: (item.qty+qty)*flower}
+            ?{...item, qty: item.qty+qty, totalPrice: (item.qty+qty)*flower.price}
             :item
             ));
         }
