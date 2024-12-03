@@ -15,9 +15,9 @@ export default function Cart({cart}) {
                 {
                  cart.map(item=>(
                         <tr key={item.id}>
-                            <td>{item.id}</td>
                             <td>{item.name}</td>
                             <td>{item.qty}</td>
+                            <td>{item.price}</td>
                         </tr>
                     )) 
                 }
