@@ -9,6 +9,11 @@ export default function Product({flower, addData}){
     const handleData=()=>{
         addData(flower,qty);
     }
+
+    const handleQuantityChange = (e) => {
+        const value = parseInt(e.target.value, 10) || 0;
+        setQty(value);
+    };
  
     return(
         <div className="grid-item">
